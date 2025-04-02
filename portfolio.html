@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Trabajos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script defer src="./components/header.js"></script>
+    <link rel="stylesheet" href="./components/header.css" />
+
+    <script defer src="./components/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer.css" />
+
+    <link rel="stylesheet" href="./pages/portfolio.css" />
+    <script defer src="./pages/portfolio.js"></script>
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <div class="header-container"></div>
+      <section class="portfolio">
+        <div class="portfolio__contenedor">
+          <div class="portfolio__contenedor-welcome">
+            <div class="portfolio__contenedor-title">
+              <h1 class="portfolio__title">
+                <span class="portfolio__title-color-1">Mis</span>
+                <span class="portfolio__title-color-2">Trabajos</span>
+              </h1>
+            </div>
+            <div class="portfolio__contenedor-image">
+              <img
+                src="https://images.ctfassets.net/b6umx2e4ufgj/vPHfqZGWUAEfGC25fACnS/179ad162b805808d7b30c9155d75e65e/portfolio.png"
+                alt=""
+                class="portfolio__image"
+              />
+            </div>
+          </div>
+          <div class="portfolio__area-cards">
+            <div class="portfolio__contenedor-cards"></div>
+            <button class="ver-mas-button">Ver más</button>
+          </div>
+        </div>
+      </section>
+      <template id="card-template">
+        <a href="#" class="card-link">
+          <div class="card">
+            <div class="card__contenedor-image">
+              <img src="" alt="" class="card__image" />
+            </div>
+            <h3 class="card__title"></h3>
+            <div class="card__description">
+              <p class="card__description-text"></p>
+            </div>
+          </div>
+        </a>
+      </template>
+      <div class="footer-container"></div>
+    </div>
+  </body>
+</html>

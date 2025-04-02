@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------        DESDE ACA ENPIEZAN LAS CARDS       --------------*/
+
+.services__area-cards {
+  width: 100%;
+  height: auto;
+  padding-top: 77px;
+  padding-bottom: 77px;
+}
+
+.services__contenedor-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+@media (min-width: 1280px) {
+  .services__contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  width: 324px;
+  height: 481px;
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.5);
+  padding: 42px 29px 0 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (min-width: 1280px) {
+  .card {
+    width: 360px;
+    height: 532px;
+    padding: 42px 48px;
+    gap: 25px;
+  }
+}
+
+.card__contenedor-image {
+  margin: 0 auto;
+  width: 265;
+  height: 158px;
+}
+
+.card__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__title {
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(238, 238, 238, 1);
+}
+
+.card__description {
+  margin: 0;
+}
+
+.card__description-text {
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  color: rgba(238, 238, 238, 1);
+}
